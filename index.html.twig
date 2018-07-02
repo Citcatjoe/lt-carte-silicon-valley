@@ -1,0 +1,107 @@
+{% use '_blocks.html.twig' %} 
+
+<!DOCTYPE HTML>
+
+<html>	
+
+	<head>
+		{{ block('head_brand') }}
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	</head>
+
+	<body>
+		{{ block('bar_brand') }}
+	
+
+		
+		
+		<div class="container">
+
+			<div class="detail">
+				<i class="fa fa-close close"></i>
+				<div class="visualisator">
+				</div>
+			</div>
+
+			<div class="carte">
+                
+                <!-- <div class="antigoogle"></div> -->
+                
+                <!-- <div class="buttons-group"> -->
+					<!-- Les boutons ici et la destination dans "map-url" -->
+					<!-- <div map-url="https://a.tiles.mapbox.com/v4/letemps.pcc16cif/attribution,zoompan,zoomwheel.html?access_token=pk.eyJ1IjoibGV0ZW1wcyIsImEiOiJxNUNYcmhzIn0.zpjrKAV20FcNdJsHZ1kNBw#3/33.382/42.188" class="button is-active">Europe</div>
+					<div map-url="https://a.tiles.mapbox.com/v4/letemps.pcc16cif/attribution,zoompan,zoomwheel.html?access_token=pk.eyJ1IjoibGV0ZW1wcyIsImEiOiJxNUNYcmhzIn0.zpjrKAV20FcNdJsHZ1kNBw#2/33.382/42.188" class="button">Monde</div> -->
+					
+					<!-- <div map-url="http://labs.letemps.ch" class="button">X</div> -->
+				<!-- </div> -->
+                
+                
+                
+                
+				
+				<div class="back map-toggle"><!-- <i class="fa fa-arrow-right"> -->Retour</i></div>
+				<!-- <i class="fa fa-arrow-circle-o-right back map-toggle"></i> -->
+				<iframe class="iframe" src="https://www.google.com/maps/d/embed?mid=1TP1EhtfGKLj2Y7vO4Cvv5cDTvaff1rPp" ></iframe>
+			</div>
+
+			<div class="infos">
+				<div class="infos__header">
+					<img src="img/head.jpg" alt="">
+					<div class="infos__header__label">Carte interactive</div>
+					<div class="infos__header__redlayer"></div>
+				</div>
+				<div class="infos__body">
+					<h1>
+						Ce que Tchernobyl et Fukushima ont changé (ou pas) dans le nucléaire civil
+					</h1>
+
+					<p>
+						<span class="chapeau">
+							Tchernobyl, 26 avril 1986. Et Fukushima, 15 mars 2011. Tout le monde s'accorde pour dire que ces deux catastrophes majeures ont changé notre vision du nucléaire. 
+							<br><p>Et pourtant. La Suisse et l’Allemagne ont décidé de tout changer chez elles et d’éliminer complètement le nucléaire à des échéances proches, mais vous serez surpris de découvrir ce qui se passe, ou ce qui ne se passe pas, dans les autres pays atomiques </p>
+<div class="button map-toggle">Voir la carte <i class="fa fa-map-marker"></i></div>
+							<hr>
+							<p>
+								<span class="chapeau">Légende</span>
+							</p>
+                    		<p><img src="img/icone-rouge.png" height="40" style="margin-right:5px" align="left"/>Pays qui continuent sur la voie du nucléaire </p>
+                        	<p><img src="img/icone-bleue.png" height="40" style="margin-right:5px" align="left"/>Pays en transition </p>
+                        	<p><img src="img/icone-jaune.png" height="40" style="margin-right:5px" align="left"/>Pays qui ont abandonné le nucléaire </p><hr>
+
+							<p><span class="chapeau">Quelques chiffres:</span></p>
+
+							<p>En mars 2016, l’AIEA fait état sur son site de 30 pays nucléaires dans le monde, qui opérent 442 réacteurs. Soixante-six réacteurs (dont 24 dans la seule Chine) sont actuellement en construction dans 15 pays, et  plus de 150 sont envisagés voire planifiés. Deux cents seront fermés d’ici 25 ans, en raison de leur vieillissement, ou par choix politique. </p>
+							<p>En Europe, quatorze Etats de l’UE ont opté pour l’énergie nucléaire. D’autres sont en train de les rejoindre comme la Pologne. </p>
+							<p>Au niveau mondial, la part du nucléaire est tombée ces dernières années  de 15 % à 11 % de la production d’électricité.</p> 
+						</span>
+					</p>
+
+					<!-- <p><strong>Sources:</strong> <a href="https://www.iaea.org/PRIS/home.aspx">Site de l'Agence internationale de l'énergie atomique </a></p> -->
+
+					<p>Sources: <a href="https://www.iaea.org/PRIS/home.aspx">Site de l'Agence internationale de l'énergie atomique </a></p>
+
+				
+
+					
+
+					<p>Déplacez-vous dans la carte et cliquez sur les icônes pour découvrir la situation de chaque pays.</p> 
+
+					
+
+					<hr>
+					
+					<p class="credits">Textes: Catherine Frammery<br>Réalisation: César Greppin<br>Photos: Reuters<br></p>
+				</div>
+			</div>
+		</div>
+
+		<!--<script src="js/tabletop.js"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+		<script src="js/handlebars-v4.0.4.js"></script>
+		<script src="js/main.js"></script>
+		{{ block('footer_brand') }}
+	</body>
+</html>

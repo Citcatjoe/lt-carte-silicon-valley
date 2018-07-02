@@ -1,0 +1,14 @@
+{
+	"title": "Ces pays qui ont abandonné le nucléaire après Fukushima",
+	"description": "Carte du nucléaire civil dans le monde, 5 ans après Fukushima",
+	"imgSocial": "social.jpg", 
+
+	"navBarStyle": "normal",
+	"navBarOffset": "0",
+	"navBarLocked": true,
+
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "http://www.letemps.ch"
+	}
+}
